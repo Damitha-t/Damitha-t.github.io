@@ -1,3 +1,20 @@
-.color{
-    background-color: lightgreen;
+table{
+    border-collapse: inherit;
+}
+
+.thead-light {
+    background-color: rgb(231, 231, 231);
+    font-weight: 400;
+}
+
+.thead-light th{
+    font-weight: 500;
+}
+
+table tbody tr td{
+    cursor: pointer;
+}
+
+tr:hover{
+    background-color: #c8daf8;
 }
