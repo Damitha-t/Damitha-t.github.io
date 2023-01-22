@@ -11,55 +11,24 @@
                         <th scope="col">Product Name</th>
                         <th scope="col">Product Description</th>
                         <th scope="col">Create Date</th>
-                        <th scope="col">Quantity in Kgs</th>
                         <th scope="col">Unit Price</th>
+                        <th scope="col">Quantity in Kgs</th>
+                        <th scope="col">Availability</th>
                         <th scope="col">Product Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Dhal</td>
-                        <td>Imported mysoor dhal from India</td>
-                        <td>Jan 29, 2020</td>
-                        <td>10</td>
-                        <td>LKR 200.00</td>
+                    <tr *ngFor = 'let product of products'>
+                        <th scope="row">{{product.productId}}</th>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.productDescription}}</td>
+                        <td>{{product.createdDate}}</td>
+                        <td>{{product.unitPrice}}</td>
+                        <td>{{product.quantity}}</td>
                         <td>
-                            <i class="fa fa-eye icon"></i>
-                            <i class="fa fa-pencil-square-o icon"></i>
+                            <p *ngIf = 'product.quantity <= 50'>Lower inventory level</p>
+                            <p *ngIf = 'product.quantity > 50'>Sufficient Inventory level</p>
                         </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>B</td>
-                        <td>Description B</td>
-                        <td>Jan 29, 2020</td>
-                        <td>20</td>
-                        <td>LKR 400.00</td>
-                        <td>
-                            <i class="fa fa-eye icon"></i>
-                            <i class="fa fa-pencil-square-o icon"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>C</td>
-                        <td>Generic description C</td>
-                        <td>Jan 29, 2020</td>
-                        <td>30</td>
-                        <td>LKR 600.00</td>
-                        <td>
-                            <i class="fa fa-eye icon"></i>
-                            <i class="fa fa-pencil-square-o icon"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>D</td>
-                        <td>Generic description D</td>
-                        <td>Jan 29, 2020</td>
-                        <td>40</td>
-                        <td>LKR 800.00</td>
                         <td>
                             <i class="fa fa-eye icon"></i>
                             <i class="fa fa-pencil-square-o icon"></i>

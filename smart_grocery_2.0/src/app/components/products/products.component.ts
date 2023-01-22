@@ -1,3 +1,4 @@
+import { Interpolation } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,46 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
 
+  constructor() {}
+
+  ngOnInit() : void {
+
+  }
+
+  public products = [{
+    'productId' : '001',
+    'productName' : 'White Basmathi Rice',
+    'createdDate' : 'Jan 29, 2020',
+    'unitPrice' : 'LKR 400',
+    'quantity' : 100,
+    'productDescription' : 'White Basmathi Rice imported from Pakistan'
+  },
+  {
+    'productId' : '002',
+    'productName' : 'Flour',
+    'createdDate' : 'Jan 29, 2020',
+    'unitPrice' : 'LKR 190',
+    'quantity' : 50,
+    'productDescription' : 'Super fine whole grain general purpose flour'
+  },
+  {
+    'productId' : '003',
+    'productName' : 'Sugar',
+    'createdDate' : 'Jan 29, 2020',
+    'unitPrice' : 'LKR 200',
+    'quantity' : 1200,
+    'productDescription' : 'White sugar manufactured by Pelawatte factory'
+  },
+  {
+    'productId' : '004',
+    'productName' : 'Dhal',
+    'createdDate' : 'Jan 29, 2020',
+    'unitPrice' : 'LKR 200',
+    'quantity' : 10,
+    'productDescription' : 'Imported mysoor dhal from India'
+  }
+]
+
 }
+
+
