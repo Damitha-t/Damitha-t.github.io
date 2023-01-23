@@ -13,6 +13,9 @@ export class ProductsComponent {
   ngOnInit() : void {
 
   }
+  
+  public rowIndex : number = 0;
+  public isRowSelected: boolean = true;
 
   public products = [{
     'productId' : '001',
@@ -47,6 +50,11 @@ export class ProductsComponent {
     'productDescription' : 'Imported mysoor dhal from India'
   }
 ]
+
+public selectProduct(selectedRow: number){
+  this.isRowSelected = false;
+  this.rowIndex = selectedRow;
+}
 
 }
 
