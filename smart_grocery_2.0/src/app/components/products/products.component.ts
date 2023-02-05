@@ -14,7 +14,7 @@ export class ProductsComponent {
 
   }
   
-  showAddProduct: boolean = false;
+  public showAddProduct : boolean = false;
   public rowIndex : number = 0;
   public isRowSelected: boolean = true;
 
@@ -57,13 +57,15 @@ public selectProduct(selectedRow: number){
   this.rowIndex = selectedRow;
 }
 
-public showAddProducts(){
+public showAddProducts() {
   this.showAddProduct = true;
 }
 
-public hideAddProducts(){
+public hideAddProducts() {
   this.showAddProduct = false;
 }
+
+
 }
 
 

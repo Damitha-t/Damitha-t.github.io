@@ -32,3 +32,17 @@ tr:hover{
 table tbody tr.active td{
     background-color: #c8daf8;
 }
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.btn-outline-primary :hover {
+    background-color: cornflowerblue !important;;
+    border-color: cornflowerblue !important;;
+}
