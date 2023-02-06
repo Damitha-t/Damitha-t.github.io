@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ContentLimiterPipe } from './content-limiter.pipe';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AddProductComponent } from './components/add-product/add-product.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

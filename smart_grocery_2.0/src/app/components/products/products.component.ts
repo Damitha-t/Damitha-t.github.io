@@ -11,8 +11,8 @@ export class ProductsComponent {
   constructor() {}
 
   ngOnInit() : void {
-
   }
+
   
   public showAddProduct : boolean = false;
   public rowIndex : number = 0;
